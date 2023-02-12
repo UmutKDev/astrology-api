@@ -79,7 +79,7 @@ export class AppService {
     const $ = cheerio.load(data);
     let response = {} as AstrologyFeatureDataResponse;
 
-    $('.col-md-12.col-lg-8').each(function (i, e) {
+    $('.col-md-12.col-lg-8').each(function () {
       response = {
         sign:
           englishLetterToTurkishLetter(sign).charAt(0).toUpperCase() +
