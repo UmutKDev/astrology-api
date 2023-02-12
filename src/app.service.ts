@@ -26,7 +26,7 @@ export class AppService {
     const $ = cheerio.load(data);
     let response = {} as AstrologyDateDataResponse;
 
-    $('div[class=main-wrapper]').each(function (i, e) {
+    $('div[class=main-wrapper]').each(function () {
       response = {
         sign:
           englishLetterToTurkishLetter(sign).charAt(0).toUpperCase() +
